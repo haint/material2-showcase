@@ -1,20 +1,33 @@
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { SimpleFormComponent } from './simple-form/simple-form.component';
+import { MailService } from 'app/mail.service';
+import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
+import { MaterialModule } from '@angular/material';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SimpleFormComponent,
+    AutoCompleteComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    ReactiveFormsModule,
+    HttpModule,
+    BrowserAnimationsModule,
+    MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    { provide: 'mail', useClass: MailService },
+    { provide: 'api', useValue: 'http://localhost:3000'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
