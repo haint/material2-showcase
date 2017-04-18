@@ -9,12 +9,14 @@ import { SimpleFormComponent } from './simple-form/simple-form.component';
 import { MailService } from 'app/mail.service';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { MaterialModule } from '@angular/material';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SimpleFormComponent,
-    AutoCompleteComponent
+    AutoCompleteComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
