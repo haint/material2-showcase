@@ -39,6 +39,7 @@ export class AreaChartComponent implements OnChanges, AfterViewInit {
     if (!this.config || this.config.length === 0 || !this.host) {
       return;
     }
+
     this.setup();
     this.buildSVG();
     this.populate();
@@ -98,8 +99,8 @@ export class AreaChartComponent implements OnChanges, AfterViewInit {
         .style('fill', area.settings.fill)
         .attr('d', D3.area()
           .x((d: any) => this.xScale(d.x))
-          .y0(this.height))
-          .y1((d: any) => this.yScale(d.y)).curve(area.settings.interpolation);
+          .y0(this.height)
+          .y1((d: any) => this.yScale(d.y)).curve(D3.curveMonotoneY));
     });
   }
 }
