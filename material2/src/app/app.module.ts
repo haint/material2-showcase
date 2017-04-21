@@ -12,6 +12,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { SimpleComponent } from "app/simple-form/simple.component";
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from "app/app-routing.module";
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AppRoutingModule } from "app/app-routing.module";
     SimpleFormComponent,
     AutoCompleteComponent,
     CheckboxComponent,
-    AppComponent
+    AppComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
