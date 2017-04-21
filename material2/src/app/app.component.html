@@ -1,13 +1,12 @@
-<div>
-  <ul>
-    <li *ngFor="let message of mail.messages">{{message.text}}</li>
-  </ul>
-  <app-simple-form 
-    *ngFor="let message of mail.messages" 
-    [message]="message.text"
-    (update)="onUpdate(message.id, $event.text)"
-    >
-  </app-simple-form>
-
-  <app-auto-complete></app-auto-complete>
-</div>
+<ul>
+  <li>
+    <a [routerLink]="['/simple']">Simple Form</a>
+  </li>
+  <li>
+    <a [routerLink]="['/auto-complete']">Auto Complete</a>
+  </li>
+  <li>
+    <a [routerLink]="['/checkbox']">Checkbox</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>

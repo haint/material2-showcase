@@ -4,19 +4,22 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
 import { MailService } from 'app/mail.service';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { MaterialModule } from '@angular/material';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { SimpleComponent } from "app/simple-form/simple.component";
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from "app/app-routing.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
+    SimpleComponent,
     SimpleFormComponent,
     AutoCompleteComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     ReactiveFormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [
     { provide: 'mail', useClass: MailService },
