@@ -13,6 +13,7 @@ import { SimpleComponent } from "app/simple-form/simple.component";
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from "app/app-routing.module";
 import { InputComponent } from './input/input.component';
+import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { InputComponent } from './input/input.component';
     AutoCompleteComponent,
     CheckboxComponent,
     AppComponent,
-    InputComponent
+    InputComponent,
+    SlideToggleComponent
   ],
   imports: [
     BrowserModule,
