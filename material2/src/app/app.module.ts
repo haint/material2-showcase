@@ -27,6 +27,10 @@ import { ChipsComponent } from './chips/chips.component';
 import { SvgComponent } from './svg/svg.component';
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { RadioComponent } from './radio/radio.component';
+import { SelectComponent } from './select/select.component';
+import { SliderComponent } from './slider/slider.component';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -49,7 +53,10 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
     ChipsComponent,
     SvgComponent,
     ProgressSpinnerComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    RadioComponent,
+    SelectComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

@@ -18,6 +18,9 @@ import { ChipsComponent } from "app/chips/chips.component";
 import { SvgComponent } from "app/svg/svg.component";
 import { ProgressSpinnerComponent } from "app/progress-spinner/progress-spinner.component";
 import { ProgressBarComponent } from "app/progress-bar/progress-bar.component";
+import { RadioComponent } from "app/radio/radio.component";
+import { SelectComponent } from "app/select/select.component";
+import { SliderComponent } from "app/slider/slider.component";
 
 const routes = [
   { path: '', redirectTo: '/simple', pathMatch: 'full' },
@@ -38,7 +41,10 @@ const routes = [
   { path: 'chips', component: ChipsComponent },
   { path: 'svg', component: SvgComponent },
   { path: 'progress-spinner', component: ProgressSpinnerComponent },
-  { path: 'progress-bar', component: ProgressBarComponent }
+  { path: 'progress-bar', component: ProgressBarComponent },
+  { path: 'radio', component: RadioComponent },
+  { path: 'select', component: SelectComponent },
+  { path: 'slider', component: SliderComponent }
 ]
 
 @NgModule({

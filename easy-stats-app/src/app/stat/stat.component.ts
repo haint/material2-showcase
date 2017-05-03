@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Customer, CustomerApi } from 'app/shared/sdk';
-import { AreaChartConfig } from "app/area-chart/area-chart-config";
+import { AreaChartConfig } from 'app/area-chart/area-chart-config';
 
 @Component({
   selector: 'app-stat',

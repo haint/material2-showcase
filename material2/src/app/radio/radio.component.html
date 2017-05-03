@@ -1,0 +1,8 @@
+<md-radio-group [(ngModel)]="favoriteSeason" class="example-radio-group">
+  <md-radio-button [value]="season" *ngFor="let season of seasons" class="example-radio-button">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">
+  Your favorite season is: {{favoriteSeason}}
+</div>
