@@ -14,6 +14,19 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from "app/app-routing.module";
 import { InputComponent } from './input/input.component';
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+import { MenuComponent } from './menu/menu.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ListComponent } from './list/list.component';
+import { GridListComponent } from './grid-list/grid-list.component';
+import { CardComponent } from './card/card.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { ButtonComponent } from './button/button.component';
+import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
+import { ChipsComponent } from './chips/chips.component';
+import { SvgComponent } from './svg/svg.component';
+import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +36,20 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
     CheckboxComponent,
     AppComponent,
     InputComponent,
-    SlideToggleComponent
+    SlideToggleComponent,
+    MenuComponent,
+    SidenavComponent,
+    ToolbarComponent,
+    ListComponent,
+    GridListComponent,
+    CardComponent,
+    TabsComponent,
+    ButtonComponent,
+    ButtonToggleComponent,
+    ChipsComponent,
+    SvgComponent,
+    ProgressSpinnerComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,

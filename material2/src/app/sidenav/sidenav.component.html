@@ -1,0 +1,32 @@
+<md-card>
+  <md-card-content>
+    <md-sidenav-container class="example-container">
+      <md-sidenav #sidenav class="example-sidenav">
+        Jolly good!
+      </md-sidenav>
+
+      <div class="example-sidenav-content">
+        <button md-button (click)="sidenav.open()">
+          Open sidenav
+        </button>
+      </div>
+    </md-sidenav-container>
+
+    <md-sidenav-container class="example-sidenav-fab-container">
+      <md-sidenav #sidenav mode="side" opened="true">
+        <button md-mini-fab class="example-fab" (click)="sidenav.toggle()">
+          <md-icon>add</md-icon>
+        </button>
+        <div class="example-scrolling-content">
+          side1
+        </div>
+      </md-sidenav>
+      <button md-mini-fab class="example-fab" (click)="sidenav.toggle()">
+        <md-icon>add</md-icon>
+      </button>
+      <div>
+        Side2
+      </div>
+    </md-sidenav-container>
+  </md-card-content>
+</md-card>
